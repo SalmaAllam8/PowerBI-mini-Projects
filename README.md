@@ -14,3 +14,12 @@ As for the customer-related insights, we can see which gender purchases the prod
 <img width="1077" height="567" alt="image" src="https://github.com/user-attachments/assets/755e44cd-c201-42d4-83f5-ad6f651a38f2" />
 Using a Random Forest Regressor, I developed a sales forecasting model for 2012 based on historical data from 2010 and 2011. To account for model uncertainty, I implemented a dynamic prediction interval in Power BI. By utilizing DAX measures and a user-controlled slicer, I created an upper and lower boundary that adjusts based on forecasted variance. The visualization confirms high model reliability, as actual sales consistently track within the predicted bounds, demonstrating the model's ability to capture complex retail seasonality. 
 I used DAX to architect a custom Date Hierarchy,
+##project 3
+#Calender Heatmap 
+
+<img width="847" height="395" alt="image" src="https://github.com/user-attachments/assets/88a5bd89-edcf-4e86-85dd-ce7c6a5bfa82" />
+
+used the calendar heatmap made by nathansmithbi 
+data set from https://github.com/datasets/covid-19 
+filtered the data to include only Egypt
+
