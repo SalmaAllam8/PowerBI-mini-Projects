@@ -1,7 +1,7 @@
 # PowerBI-mini-Projects
 
 
-The super market prokect 
+The super market project 
 <img width="997" height="707" alt="image" src="https://github.com/user-attachments/assets/bb46efc3-0848-4f9b-80b7-e0ac20ce7b1c" />
 
 I made this simple Power BI project using a clean and simple Kaggle dataset, primarily to practice the skills I've learned in Power BI.
