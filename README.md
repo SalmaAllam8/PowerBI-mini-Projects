@@ -7,3 +7,10 @@ The super market prokect
 I made this simple Power BI project using a clean and simple Kaggle dataset, primarily to practice the skills I've learned in Power BI.
 This visual helps us analyze the performance of each product line throughout the year. This insight will aid us in making decisions regarding inventory management. We also have the average sales for each product during the day (which is optional) and the gross sales per city to understand which city is selling the product the most. Furthermore, we can see the total gross income, average unit price, and average rating for each product, which shows us which products have the highest performance and are most liked by customers.
 As for the customer-related insights, we can see which gender purchases the product the most (represented by the pink and blue circle around the image, in case you missed it). We also track the customer type—whether they are 'Normal' or 'Member' customers—and their preferred payment method. This data allows us to learn more about our customer base and supports us in making strategic decisions in marketing.
+## Project 2
+
+# Walmart Sales prediction 
+
+<img width="1077" height="567" alt="image" src="https://github.com/user-attachments/assets/755e44cd-c201-42d4-83f5-ad6f651a38f2" />
+Using a Random Forest Regressor, I developed a sales forecasting model for 2012 based on historical data from 2010 and 2011. To account for model uncertainty, I implemented a dynamic prediction interval in Power BI. By utilizing DAX measures and a user-controlled slicer, I created an upper and lower boundary that adjusts based on forecasted variance. The visualization confirms high model reliability, as actual sales consistently track within the predicted bounds, demonstrating the model's ability to capture complex retail seasonality. 
+I used DAX to architect a custom Date Hierarchy,
