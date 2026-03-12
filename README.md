@@ -14,7 +14,13 @@ As for the customer-related insights, we can see which gender purchases the prod
 <img width="1077" height="567" alt="image" src="https://github.com/user-attachments/assets/755e44cd-c201-42d4-83f5-ad6f651a38f2" />
 Using a Random Forest Regressor, I developed a sales forecasting model for 2012 based on historical data from 2010 and 2011. To account for model uncertainty, I implemented a dynamic prediction interval in Power BI. By utilizing DAX measures and a user-controlled slicer, I created an upper and lower boundary that adjusts based on forecasted variance. The visualization confirms high model reliability, as actual sales consistently track within the predicted bounds, demonstrating the model's ability to capture complex retail seasonality. 
 I used DAX to architect a custom Date Hierarchy,
-
+Dax code used:
+Forcast - lowerlimit = (SUM('sales_forecast_2012'[Predicted_Sales]))*(1-[Target range Value])
+Forcast - Upperlimit = (SUM('sales_forecast_2012'[Predicted_Sales]))*(1+ [Target range Value])
+Target range = GENERATESERIES(0, 1, 0.05)
+Quarter = "Q" & FORMAT('sales_forecast_2012'[Date], "Q")
+Month = FORMAT(sales_forecast_2012[Date], "MMMM")
+Day = FORMAT('sales_forecast_2012'[Date], "DD MMMM")
 
 ## project 3
 # Calender Heatmap 
