@@ -19,12 +19,19 @@ live project :   https://app.powerbi.com/groups/me/reports/8de3b15c-2d88-4dcf-89
 Using a Random Forest Regressor, I developed a sales forecasting model for 2012 based on historical data from 2010 and 2011. To account for model uncertainty, I implemented a dynamic prediction interval in Power BI. By utilizing DAX measures and a user-controlled slicer, I created an upper and lower boundary that adjusts based on forecasted variance. The visualization confirms high model reliability, as actual sales consistently track within the predicted bounds, demonstrating the model's ability to capture complex retail seasonality. 
 I used DAX to architect a custom Date Hierarchy,
 Dax code used:
+
 Forcast - lowerlimit = (SUM('sales_forecast_2012'[Predicted_Sales]))*(1-[Target range Value])
+
 Forcast - Upperlimit = (SUM('sales_forecast_2012'[Predicted_Sales]))*(1+ [Target range Value])
+
 Target range = GENERATESERIES(0, 1, 0.05)
+
 Quarter = "Q" & FORMAT('sales_forecast_2012'[Date], "Q")
+
 Month = FORMAT(sales_forecast_2012[Date], "MMMM")
+
 Day = FORMAT('sales_forecast_2012'[Date], "DD MMMM")
+
 
 
 live project : https://app.powerbi.com/groups/me/reports/b71a0674-1a85-4929-8000-099ac7cc1053/244045120b16176d301c?experience=power-bi 
