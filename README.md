@@ -47,3 +47,47 @@ filtered the data to include only Egypt
 
 live project : https://app.powerbi.com/groups/me/reports/58aa18d9-42ef-4929-a8df-8cd5eb004dd8/4cf96c2cba9823518744?experience=power-bi
 please select from year 2020-2022 
+
+# Project 4 
+
+<img width="1097" height="616" alt="image" src="https://github.com/user-attachments/assets/d8dd8804-283a-479c-a5e3-e464155bde80" />
+
+#  Chocolate Sales Dashboard
+
+## Overview
+
+This project presents an interactive Power BI dashboard developed to analyze global chocolate sales between 2022 and 2025. The report provides business users with a comprehensive view of sales performance through interactive KPIs, time-series analysis, and product performance visualizations.
+
+## Features
+
+- Dynamic Year and Country filtering
+- Total Sales KPI
+- YoY Growth KPI
+- Average Sales KPI
+- Top Salesperson KPI
+- Monthly Sales Trend
+- Product Contribution by Country
+- Conditional formatted sales table
+
+## DAX Measures
+
+- Total Sales
+- YoY Growth %
+- Rolling 12-Month Sales
+- Rolling Average Sales
+- Top 5 Products
+- Top Salesperson
+
+## Data Modeling
+
+- Calendar Table
+- Date Relationships
+- Time Intelligence Functions
+
+## Technologies
+
+- Power BI
+- DAX
+- Power Query
+- Excel
+
