@@ -50,9 +50,9 @@ please select from year 2020-2022
 
 # Project 4 
 
-<img width="1097" height="616" alt="image" src="https://github.com/user-attachments/assets/d8dd8804-283a-479c-a5e3-e464155bde80" />
 
 #  Chocolate Sales Dashboard
+<img width="1090" height="602" alt="image" src="https://github.com/user-attachments/assets/7ad9273a-33ec-4352-8aa2-63b44d42e9cf" />
 
 ## Overview
 
