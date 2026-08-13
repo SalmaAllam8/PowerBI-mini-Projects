@@ -1,0 +1,82 @@
+{
+    "dataRoles": [
+        { "displayName": "Hashtag", "name": "hashtag", "kind": "Grouping" },
+        { "displayName": "Avg Impressions", "name": "impressions", "kind": "Measure" },
+        { "displayName": "Eng. Rate", "name": "engRate", "kind": "Measure" },
+        { "displayName": "Clicks", "name": "clicks", "kind": "Measure" },
+        { "displayName": "CTR", "name": "ctr", "kind": "Measure" }
+    ],
+    "dataViewMappings": [
+        {
+            "conditions": [
+                { "hashtag": { "max": 1 }, "impressions": { "max": 1 }, "engRate": { "max": 1 }, "clicks": { "max": 1 }, "ctr": { "max": 1 } }
+            ],
+            "categorical": {
+                "categories": {
+                    "for": { "in": "hashtag" },
+                    "dataReductionAlgorithm": { "top": { "count": 100 } }
+                },
+                "values": {
+                    "select": [
+                        { "bind": { "to": "impressions" } },
+                        { "bind": { "to": "engRate" } },
+                        { "bind": { "to": "clicks" } },
+                        { "bind": { "to": "ctr" } }
+                    ]
+                }
+            }
+        }
+    ],
+    "objects": {
+        "header": {
+            "properties": {
+                "title": { "type": { "text": true } },
+                "subtitle": { "type": { "text": true } },
+                "showIcon": { "type": { "bool": true } }
+            }
+        },
+        "dataPoint": {
+            "properties": {
+                "barColorStart": { "type": { "fill": { "solid": { "color": true } } } },
+                "barColorEnd": { "type": { "fill": { "solid": { "color": true } } } },
+                "barTrackColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "hashtagColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "positiveColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "impressionsColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "engRateColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "clicksColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "hashtagFontSize": { "type": { "formatting": { "fontSize": true } } },
+                "impressionsFontSize": { "type": { "formatting": { "fontSize": true } } },
+                "engRateFontSize": { "type": { "formatting": { "fontSize": true } } },
+                "clicksFontSize": { "type": { "formatting": { "fontSize": true } } },
+                "ctrFontSize": { "type": { "formatting": { "fontSize": true } } }
+            }
+        },
+        "columnHeader": {
+            "properties": {
+                "hashtagHeaderColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "hashtagHeaderFontSize": { "type": { "formatting": { "fontSize": true } } },
+                "impressionsHeaderColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "impressionsHeaderFontSize": { "type": { "formatting": { "fontSize": true } } },
+                "engRateHeaderColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "engRateHeaderFontSize": { "type": { "formatting": { "fontSize": true } } },
+                "clicksHeaderColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "clicksHeaderFontSize": { "type": { "formatting": { "fontSize": true } } },
+                "ctrHeaderColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "ctrHeaderFontSize": { "type": { "formatting": { "fontSize": true } } }
+            }
+        },
+        "sortOrder": {
+            "properties": {
+                "sortBy": { "type": { "enumeration": [
+                    { "value": "engRate", "displayName": "Eng. Rate" },
+                    { "value": "impressions", "displayName": "Avg Impressions" },
+                    { "value": "clicks", "displayName": "Clicks" },
+                    { "value": "ctr", "displayName": "CTR" }
+                ] } },
+                "topN": { "type": { "numeric": true } }
+            }
+        }
+    },
+    "privileges": []
+}
