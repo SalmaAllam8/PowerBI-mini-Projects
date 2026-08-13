@@ -1,0 +1,85 @@
+{
+    "dataRoles": [
+        { "displayName": "Post", "name": "post", "kind": "Grouping" },
+        { "displayName": "Platform", "name": "platform", "kind": "Grouping" },
+        { "displayName": "Content Category", "name": "contentCategory", "kind": "Grouping" },
+        { "displayName": "Content Type", "name": "contentType", "kind": "Grouping" },
+        { "displayName": "Eng. Rate", "name": "engRate", "kind": "Measure" },
+        { "displayName": "Engagements", "name": "engagements", "kind": "Measure" },
+        { "displayName": "Reach", "name": "reach", "kind": "Measure" }
+    ],
+    "dataViewMappings": [
+        {
+            "conditions": [
+                { "post": { "max": 1 }, "platform": { "max": 1 }, "contentCategory": { "max": 1 }, "contentType": { "max": 1 }, "engRate": { "max": 1 }, "engagements": { "max": 1 }, "reach": { "max": 1 } }
+            ],
+            "table": {
+                "rows": {
+                    "select": [
+                        { "for": { "in": "post" } },
+                        { "for": { "in": "platform" } },
+                        { "for": { "in": "contentCategory" } },
+                        { "for": { "in": "contentType" } },
+                        { "for": { "in": "engRate" } },
+                        { "for": { "in": "engagements" } },
+                        { "for": { "in": "reach" } }
+                    ],
+                    "dataReductionAlgorithm": { "top": { "count": 100 } }
+                }
+            }
+        }
+    ],
+    "objects": {
+        "header": {
+            "properties": {
+                "title": { "type": { "text": true } },
+                "subtitle": { "type": { "text": true } },
+                "showIcon": { "type": { "bool": true } }
+            }
+        },
+        "dataPoint": {
+            "properties": {
+                "postColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "postFontSize": { "type": { "formatting": { "fontSize": true } } },
+                "platformColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "platformFontSize": { "type": { "formatting": { "fontSize": true } } },
+                "contentCategoryColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "contentTypeColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "contentFontSize": { "type": { "formatting": { "fontSize": true } } },
+                "engRateColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "engRateFontSize": { "type": { "formatting": { "fontSize": true } } },
+                "engagementsColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "engagementsFontSize": { "type": { "formatting": { "fontSize": true } } },
+                "reachColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "reachFontSize": { "type": { "formatting": { "fontSize": true } } }
+            }
+        },
+        "columnHeader": {
+            "properties": {
+                "postHeaderColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "postHeaderFontSize": { "type": { "formatting": { "fontSize": true } } },
+                "platformHeaderColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "platformHeaderFontSize": { "type": { "formatting": { "fontSize": true } } },
+                "contentHeaderColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "contentHeaderFontSize": { "type": { "formatting": { "fontSize": true } } },
+                "engRateHeaderColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "engRateHeaderFontSize": { "type": { "formatting": { "fontSize": true } } },
+                "engagementsHeaderColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "engagementsHeaderFontSize": { "type": { "formatting": { "fontSize": true } } },
+                "reachHeaderColor": { "type": { "fill": { "solid": { "color": true } } } },
+                "reachHeaderFontSize": { "type": { "formatting": { "fontSize": true } } }
+            }
+        },
+        "sortOrder": {
+            "properties": {
+                "sortBy": { "type": { "enumeration": [
+                    { "value": "engRate", "displayName": "Eng. Rate" },
+                    { "value": "engagements", "displayName": "Engagements" },
+                    { "value": "reach", "displayName": "Reach" }
+                ] } },
+                "topN": { "type": { "numeric": true } }
+            }
+        }
+    },
+    "privileges": []
+}

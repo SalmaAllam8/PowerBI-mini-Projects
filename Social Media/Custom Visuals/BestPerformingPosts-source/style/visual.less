@@ -1,0 +1,194 @@
+.bpp-root {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 14px 18px;
+    font-family: "Segoe UI", "Segoe UI Semibold", sans-serif;
+    color: #201f22;
+    overflow: auto;
+
+    --bpp-post-color: #4b4a52;
+    --bpp-post-fontsize: 12px;
+    --bpp-platform-color: #4b4a52;
+    --bpp-platform-fontsize: 12px;
+    --bpp-category-color: #4f46e5;
+    --bpp-type-color: #9a97a4;
+    --bpp-content-fontsize: 12px;
+    --bpp-engrate-color: #1a9850;
+    --bpp-engrate-fontsize: 12px;
+    --bpp-engagements-color: #4b4a52;
+    --bpp-engagements-fontsize: 12px;
+    --bpp-reach-color: #4b4a52;
+    --bpp-reach-fontsize: 12px;
+
+    --bpp-header-post-color: #9a97a4;
+    --bpp-header-post-fontsize: 9px;
+    --bpp-header-platform-color: #9a97a4;
+    --bpp-header-platform-fontsize: 9px;
+    --bpp-header-content-color: #9a97a4;
+    --bpp-header-content-fontsize: 9px;
+    --bpp-header-engrate-color: #9a97a4;
+    --bpp-header-engrate-fontsize: 9px;
+    --bpp-header-engagements-color: #9a97a4;
+    --bpp-header-engagements-fontsize: 9px;
+    --bpp-header-reach-color: #9a97a4;
+    --bpp-header-reach-fontsize: 9px;
+}
+
+.bpp-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.bpp-header-icon {
+    font-size: 1.1em;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.bpp-title {
+    font-weight: 700;
+    font-size: 1.15em;
+    line-height: 1.3;
+}
+
+.bpp-subtitle {
+    font-size: 0.78em;
+    color: #8a8894;
+    margin-top: 2px;
+}
+
+.bpp-colheader {
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid #eceaf1;
+    font-size: 0.68em;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #9a97a4;
+}
+
+.bpp-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.bpp-row {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f3f1f6;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.bpp-col {
+    display: flex;
+    align-items: center;
+}
+
+.bpp-col-post {
+    flex: 0 0 15%;
+}
+
+.bpp-post-text {
+    color: var(--bpp-post-color);
+    font-size: var(--bpp-post-fontsize);
+}
+
+.bpp-col-platform {
+    flex: 0 0 16%;
+    gap: 6px;
+}
+
+.bpp-platform-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.bpp-platform-text {
+    color: var(--bpp-platform-color);
+    font-size: var(--bpp-platform-fontsize);
+}
+
+.bpp-col-content {
+    flex: 1 1 30%;
+    gap: 2px;
+}
+
+.bpp-content-category {
+    color: var(--bpp-category-color);
+    font-size: var(--bpp-content-fontsize);
+    font-weight: 600;
+}
+
+.bpp-content-sep {
+    color: var(--bpp-type-color);
+    font-size: var(--bpp-content-fontsize);
+}
+
+.bpp-content-type {
+    color: var(--bpp-type-color);
+    font-size: var(--bpp-content-fontsize);
+}
+
+.bpp-col-num {
+    flex: 0 0 13%;
+    justify-content: flex-end;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.bpp-eng-rate {
+    color: var(--bpp-engrate-color);
+    font-size: var(--bpp-engrate-fontsize);
+    font-weight: 600;
+}
+
+.bpp-engagements {
+    color: var(--bpp-engagements-color);
+    font-size: var(--bpp-engagements-fontsize);
+}
+
+.bpp-reach {
+    color: var(--bpp-reach-color);
+    font-size: var(--bpp-reach-fontsize);
+}
+
+.bpp-header-post {
+    color: var(--bpp-header-post-color);
+    font-size: var(--bpp-header-post-fontsize);
+}
+
+.bpp-header-platform {
+    color: var(--bpp-header-platform-color);
+    font-size: var(--bpp-header-platform-fontsize);
+}
+
+.bpp-header-content {
+    color: var(--bpp-header-content-color);
+    font-size: var(--bpp-header-content-fontsize);
+}
+
+.bpp-header-engrate {
+    color: var(--bpp-header-engrate-color);
+    font-size: var(--bpp-header-engrate-fontsize);
+}
+
+.bpp-header-engagements {
+    color: var(--bpp-header-engagements-color);
+    font-size: var(--bpp-header-engagements-fontsize);
+}
+
+.bpp-header-reach {
+    color: var(--bpp-header-reach-color);
+    font-size: var(--bpp-header-reach-fontsize);
+}
