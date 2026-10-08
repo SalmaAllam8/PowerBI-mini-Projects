@@ -94,5 +94,7 @@ This project presents an interactive Power BI dashboard developed to analyze glo
 - # Project 5
 
 - ## Social Media
+
+- ![Social Media Dashboard](Social%20Media/Social%20media%20project_page-0001.jpg)
 - You can view the project content here  : https://www.linkedin.com/posts/salma-morsi-334bb9234_dataanalysis-dataanalytics-python-ugcPost-7493615850684411905-pW2L/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADqN_ZgB6rAbt2ZZWXs1BK8Tl261z-PcUAs
 
